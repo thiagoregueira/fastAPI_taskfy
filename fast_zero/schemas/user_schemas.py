@@ -20,3 +20,8 @@ class UserResponseSchema(BaseModel):
 
 class UserListResponseSchema(BaseModel):
     users: list[UserResponseSchema]
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
